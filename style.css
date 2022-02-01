@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #076854;
+  --secondary-color: #11c9a4;
+  --light-color: #fff;
+  --lg-color: linear-gradient(#0e161a, #0a523c);
+  --dark-color: #000000f5;
+  --red-color: #f80000;
+}
+
+.light-mode {
+  --dark-color: #a59797;
+  --light-color: #000000f5;
+  --lg-color: #f5ecec;
+  --primary-color: #10c5a1;
+}
+
+body{
+  margin: 0 0 0 15rem;
+}
+.navBar {
+  width: 15rem;
+  background-color: var(--primary-color);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  box-shadow: 0.5rem 1rem 1rem 0.05rem var(--dark-color);
+  overflow-x: hidden;
+}
+
+.logo {
+  height: 4rem;
+  background-color: var(--red-color);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 5rem;
+}
+
+.logo-text {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.nav-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  /* padding: .5rem 3rem .5rem 3rem; */
+}
+
+.nav-link:first-child {
+  background: var(--red-color);
+}
+
+.link-text {
+  color: var(--light-color);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* display: block; */
+  height: 100%;
+  width: 100%;
+  padding-left: 5rem;
+}
+
+/* .link-text {
+    padding: 0 5rem 0 1rem;
+} */
+
+.link-icons {
+  font-size: 1.8rem;
+  color: var(--light-color);
+  position: absolute;
+  left: 1rem;
+  /* padding: 0 .5rem 0 .8rem; */
+}
+
+.nav-last {
+  /* display: block; */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav-link:hover {
+  background-color: #fff3;
+}
+
+.nav-link:active {
+  background-color: var(--red-color);
+}
+
+/* Body Content start from here */
+
+main {
+  background: var(--lg-color);
+  width: 100%;
+  color: var(--light-color);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.body-head {
+  /* padding: 1rem 3rem; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-head-tittle {
+  font-size: 1.5rem;
+}
+
+.my-name-text {
+  font-size: 3.5rem;
+  color: var(--secondary-color);
+}
+
+.change-text {
+  color: var(--red-color);
+  font-size: 2.4rem;
+}
+
+.change-text::after {
+  content: "";
+  animation: changetext 5s infinite linear;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Web Developer";
+  }
+  35% {
+    content: "UI/UX Designer";
+  }
+  70% {
+    content: "Freelancer";
+  }
+  100% {
+    content: "Content Writer";
+  }
+}
+
+.btn-primary {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 10rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  background: var(--primary-color);
+  color: var(--light-color);
+  box-shadow: 0.5rem 1rem 1rem 0.06rem var(--dark-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--red-color);
+}
+
+.container {
+  padding: 0 8rem;
+}
+
+.dp {
+  width: 15rem;
+  border: 2px solid var(--light-color);
+  border-radius: 50%;
+  padding: 0.1rem;
+  margin-bottom: 2.2rem;
+  box-shadow: 0.5rem 0.8rem 3rem 1rem var(--dark-color);
+}
+
+.container-text {
+  line-height: 2rem;
+  text-transform: capitalize;
+}
+
+.social-handle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-link {
+  text-decoration: none;
+  border: 1px solid var(--light-color);
+  border-radius: 3rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0.2rem;
+  box-shadow: 0.5rem 1rem 1rem 0.06rem var(--dark-color);
+}
+
+.profile-link:hover {
+  background: var(--red-color);
+}
+
+.profile-link-icon,
+.profile-link-text {
+  color: var(--light-color);
+  font-size: 1.2rem;
+  padding: 0.2rem;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form h1 {
+  text-align: center;
+  width: max-content;
+  position: relative;
+  color: var(--light-color);
+  padding: .5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--light-color);
+  
+}
+
+.input-form {
+  background: transparent;
+  border: none;
+  border: 2px solid var(--light-color);
+  outline: none;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width: 30em;
+  margin: .3rem 2rem;
+  color: var(--light-color);
+  font-family: sans-serif;
+}
+
+/* 
+.container {
+    padding-bottom: 2rem;
+} 
+.container-tittle {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--light-color);
+  background: var(--light-color);
+  color: var(--nav-color);
+}
+
+.container-body {
+  text-transform: capitalize;
+  padding: 1rem 2rem 2rem 2rem;
+  border-bottom: 1px solid var(--light-color);
+} 
+*/
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0 0 0 4rem;
+  }
+
+  .navBar {
+    width: 4rem;
+  }
+
+  .hamburger-menu {
+    /* margin: 0.5rem 3rem; */
+    /* background-color: #000399; */
+    width: 100%;
+    height: 3.4rem;
+    /* margin-left: 2.5rem; */
+    cursor: pointer;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 3.5%;
+    left: 1rem;
+    background-color: var(--light-color);
+    width: 28px;
+    height: 4px;
+    border-radius: 5px;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    background-color: var(--light-color);
+    height: 4px;
+    border-radius: 5px;
+  }
+
+  .hamburger::before {
+    width: 35px;
+    transform: translateY(-10px);
+  }
+
+  .hamburger::after {
+    width: 20px;
+    transform: translateY(10px);
+  }
+
+  .body-head {
+    padding: 0 3rem;
+    align-items: flex-start;
+  }
+
+  .body-head-tittle {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+    align-items: center;
+  }
+
+  .container-text{
+      line-height: 1.8rem;
+      margin-bottom: 1rem;
+  }
+
+  .my-name-text {
+    font-size: 2rem;
+  }
+
+  .dp {
+    width: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  .profile-link{
+      margin: .1rem 0;
+  }
+
+  .profile-link-icon,
+  .profile-link-text {
+    font-size: 1rem;
+    padding: 0.2rem 0.1rem;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+  .contact-form h1{
+    font-size: 1.2rem;
+  }
+
+  .input-form {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
