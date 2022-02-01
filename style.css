@@ -276,11 +276,20 @@ main {
 
 @media screen and (max-width: 1024px) {
   body {
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 3rem;
   }
 
   .navBar {
-    width: 4rem;
+    width: 3rem;
+  }
+
+  .link-icons, 
+  .link-text {
+    font-size: 1rem;
+  }
+
+  .link-text{
+  padding-left: 3.5rem;
   }
 
   .hamburger-menu {
@@ -295,9 +304,9 @@ main {
   .hamburger {
     position: absolute;
     top: 3.5%;
-    left: 1rem;
+    left: .5rem;
     background-color: var(--light-color);
-    width: 28px;
+    width: 24px;
     height: 4px;
     border-radius: 5px;
   }
@@ -312,12 +321,12 @@ main {
   }
 
   .hamburger::before {
-    width: 35px;
+    width: 30px;
     transform: translateY(-10px);
   }
 
   .hamburger::after {
-    width: 20px;
+    width: 15px;
     transform: translateY(10px);
   }
 

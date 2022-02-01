@@ -9,6 +9,7 @@
     themeChange.addEventListener('click', () => {
         if (active == false) {
             body.classList.remove("light-mode");
+            themeIcon.classList.replace("fa-moon", "fa-sun")
             active = true;
         }
         else {
@@ -20,13 +21,13 @@
 
     hamburger.addEventListener('click', () => {
         if (active == false) {
-            navBar.style.width = "4rem";
-            body.style.marginLeft = "4rem"
+            navBar.style.width = "3rem";
+            body.style.marginLeft = "3rem"
             active = true;
         }
         else {
-            navBar.style.width = "15rem";
-            body.style.marginLeft = "15rem"
+            navBar.style.width = "10rem";
+            body.style.marginLeft = "10rem"
             active = false;
         }
     })
