@@ -21,7 +21,7 @@
   --primary-color: #10c5a1;
 }
 
-body{
+body {
   margin: 0 0 0 15rem;
 }
 .navBar {
@@ -224,7 +224,7 @@ main {
   padding: 0.2rem;
 }
 
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,10 +236,9 @@ main {
   width: max-content;
   position: relative;
   color: var(--light-color);
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   margin-bottom: 1rem;
   border-bottom: 3px solid var(--light-color);
-  
 }
 
 .input-form {
@@ -250,7 +249,7 @@ main {
   border-radius: 1.5rem;
   padding: 1rem;
   width: 30em;
-  margin: .3rem 2rem;
+  margin: 0.3rem 2rem;
   color: var(--light-color);
   font-family: sans-serif;
 }
@@ -336,9 +335,10 @@ main {
     align-items: center;
   }
 
-  .container-text{
-      line-height: 1.8rem;
-      margin-bottom: 1rem;
+  .container-text {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
   }
 
   .my-name-text {
@@ -346,18 +346,18 @@ main {
   }
 
   .dp {
-    width: 8rem;
-    margin-bottom: 1rem;
+    width: 7rem;
+    margin-bottom: 1.5rem;
   }
 
-  .profile-link{
-      margin: .1rem 0;
+  .profile-link {
+    margin: 0.2rem;
   }
 
   .profile-link-icon,
   .profile-link-text {
-    font-size: 1rem;
-    padding: 0.2rem 0.1rem;
+    font-size: .8rem;
+    padding: 0 0.1rem;
   }
 
   .contact-form {
@@ -365,10 +365,9 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
   }
 
-  .contact-form h1{
+  .contact-form h1 {
     font-size: 1.2rem;
   }
 
