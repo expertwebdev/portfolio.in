@@ -37,6 +37,7 @@ body {
 }
 
 .nav-ul {
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -235,6 +236,10 @@ main {
   .navBar {
     width: 3rem;
     background-color: var(--dark-color);
+  }
+  
+  .nav-ul{
+    padding-top: 0;
   }
 
   .link-icons,
